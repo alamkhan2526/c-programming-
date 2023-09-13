@@ -1,11 +1,11 @@
-//Write a program which takes a character as an input and displays its ASCII code.
+//WAP to print the name of the user in double quotes.
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    char c;
-    printf("\n Enter a character");
-    scanf("%c",&c);
-    printf("\n %d ",c);
+    char c[100];
+    printf("\n Enter your name");
+   gets(c);
+   puts(c);
     return 0;
 }

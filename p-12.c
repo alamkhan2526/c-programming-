@@ -1,13 +1,10 @@
-/*Assume price of 1 USD is INR 76.23. Write a program to take the amount in INR and
-convert it into USD.*/
-
+//Find output of below code:
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int inr;
-    printf("\nEnter Inr");
-    scanf("%d",&inr);
-    printf("\n%f",76.23*inr);
-    return 0;
+int x = printf("ineuron");
+printf("%d\n",x);
+return 0;
 }
+// the output of the program is ineuron7

@@ -1,13 +1,15 @@
-/*Write a program to make the last digit of a number stored in a variable as zero.
-(Example - if x=2345 then make it x=2340)*/
+/*WAP to take date as an input in below given format and convert the date format and
+display the result as given below.
+User Input date format – “DD/MM/YYYY” (27/11/2022)
+Output format –
+“Day – DD , Month – MM , Year – YYYY” (Day – 27 ,Month – 07 , Year – 2022)*/
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int num;
-    printf("\n Enter al number");
-    scanf("\n%d",&num);
-    num=num/10*10;
-    printf("\n %d",num);
+    int date,month,year;
+    printf("\n Enter    DD/MM/YYY");
+    scanf("%d%d%d",&date,&month,&year);
+    printf("\nDay - %d ,Month - %d ,year - %d",date,month,year);
     return 0;
 }

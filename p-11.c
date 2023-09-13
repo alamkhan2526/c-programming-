@@ -1,14 +1,17 @@
-/*11. Write a program to input a number from the user and also input a digit. Append a
-digit in the number and print the resulting number. (Example - number=234 and
-digit=9 then the resulting number is 2349)*/
+/*11. WAP to take time as an input in below given format and convert the time format and
+display the result as given below.
+User Input date format – “HH:MM”
+Output format – “HH hour and MM Minute”
+Example –
+“11:25” converted to “11 Hour and 25 Minute”*/
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int num;
-    printf("\n Enter a number");
-    scanf("%d",&num);
-    num=num/10*10+9;
-    printf("\n %d",num);
+    int hour,minute;
+    printf("\n Enter \"HH:MM\"\n");
+    scanf("%d%d",&hour,&minute);
+    printf("\n %d Hour and %d Minute",hour,minute);
     return 0;
+
 }

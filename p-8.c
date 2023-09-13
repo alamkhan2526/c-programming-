@@ -1,16 +1,8 @@
-/*Write a program to check whether the given number is even or odd using a bitwise
-operator.*/
+//WAP to print “\n” on the screen.
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int num;
-    printf("\nEnter a number");
-    scanf("%d",&num);
-    if(num & 1 == 1)
-    printf("\n %d is an odd number",num);
-    else
-    printf("\n %d is an even number",num);
+    printf(" \\n");
     return 0;
-    
 }
