@@ -1,12 +1,14 @@
-//Write a program to print MySirG 5 times on the screen
+// Write a program to print MySirG N times on the screen
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int i=1;
-    while(i<=5)
+    int n,i=1;
+    printf("Enter the value of n");
+    scanf("%d",&n);
+    while(i<=n)
     {
-        printf(" \nMySirG ");
+        printf("\n MySirG");
         i++;
     }
     return 0;

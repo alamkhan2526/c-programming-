@@ -1,13 +1,14 @@
-//Write a program to print the first 10 odd natural numbers
+// Write a program to print the first N odd natural numbers
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int i=1;
-
-    while(i<=19)
+    int n,i=1;
+    printf("\n Enter the value of n");
+    scanf("%d",&n);
+    while(i<=2*n-1)
     {
-        printf("\n %d ",i);
+        printf("\n%d",i);
         i=i+2;
     }
     return 0;

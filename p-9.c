@@ -1,13 +1,15 @@
-// Write a program to print cubes of the first 10 natural numbers
+// Write a program to print cubes of the first N natural numbers
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int i=1;
-    while(i<=19)
+    int n,i=1;
+    printf("\n Enter the value of n");
+    scanf("%d",&n);
+    while(i<=n)
     {
         printf("\n%d",i*i*i);
-        i=i+2;
+        i++;
     }
     return 0;
 }

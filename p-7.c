@@ -1,13 +1,16 @@
-//Write a program to print the first 10 even natural numbers in reverse order
+// Write a program to print the first N even natural numbers in reverse order
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int i=20;
-    while(i>=2)
+    int n,i=2;
+    printf("\n Enter the value of n");
+    scanf("%d",&n);
+    n=n*2;
+    while(n>=i)
     {
-        printf("\n %d",i);
-        i=i-2;
+        printf("\n%d",n);
+        n-=2;
     }
     return 0;
 }
