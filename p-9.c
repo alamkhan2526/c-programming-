@@ -1,21 +1,13 @@
-/*Write a program to find the greatest among three given numbers. Print number once
-if the greatest number appears two or three times.*/
-#include<Stdio.h>
+// Write a program to print cubes of the first 10 natural numbers
+#include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int num1,num2,num3;
-    printf("\n Enter three numbers");
-    scanf("%d%d%d",&num1,&num2,&num3);
-    if(num1==num2 || num1||num3 || num2==num3)
-    printf("\n %d is appears two times",num1,num2,num3);
-     if (num1>num2 && num1>num3)
-    
-    printf("\n%d is greater than %d and %d",num1,num2,num3);
-    else if(num2>num3)
-    printf("\n %d is greater than %d and %d",num2,num1,num3);
-    else
-    printf("\n %d is greater than %d and %d",num3,num2,num1);
-    
+    int i=1;
+    while(i<=19)
+    {
+        printf("\n%d",i*i*i);
+        i=i+2;
+    }
     return 0;
 }

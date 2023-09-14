@@ -1,15 +1,13 @@
-/*Write a program to check whether a given number is an even number or an odd
-number.*/
+//Write a program to print the first 10 natural numbers in reverse order
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int num;
-    printf("\n Enter a number");
-    scanf("%d",&num);
-    if(num%2==0)
-    printf("\n %d is an even number",num);
-    else
-    printf("\n %d is an odd number",num);
+    int i=10;
+    while(i)
+    {
+        printf("\n %d ",i);
+        i--;
+    }
     return 0;
 }

@@ -1,14 +1,13 @@
-//Write a program to check whether a given number is positive or non-positive.
+//Write a program to print MySirG 5 times on the screen
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int num;
-    printf("\n Enter a number");
-    scanf("%d",&num);
-    if(num>0)
-    printf("%d is a positive number",num);
-    else
-    printf("\n%d is non-positive",num);
+    int i=1;
+    while(i<=5)
+    {
+        printf(" \nMySirG ");
+        i++;
+    }
     return 0;
 }

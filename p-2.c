@@ -1,15 +1,13 @@
-/*Write a program to check whether a given number is divisible by 5 or not*/
+//Write a program to print the first 10 natural numbers.
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int num;
-    printf("\nEnter a number",&num);
-    scanf("%d",&num);
-
-    if(num%5==0)
-    printf("\n %d is divisible by 5",num);
-    else 
-    printf("\n %d is not divisible by 5",num);
+    int i=1;
+    while(i<=10)
+    {
+        printf("\n %d",i);
+        i++;
+    }
     return 0;
 }
