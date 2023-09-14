@@ -1,15 +1,15 @@
-// Write a program to print a table of N.
+// Write a program to reverse a given number
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int n,i=1;
-    printf("\n Enter the table which you want to print");
-    scanf("%d",&n);
-    while(i<=10)
+    int num;
+    printf("\n Enter a number");
+    scanf("%d",&num);
+    while(num)
     {
-        printf("\n %d",i*n);
-        i++;
+        printf("%d",num%10);
+        num=num/10;
     }
     return 0;
 }

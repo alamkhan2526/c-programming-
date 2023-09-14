@@ -1,15 +1,23 @@
-// Write a program to print cubes of the first N natural numbers
+// Write a program to calculate LCM of two numbers
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int n,i=1;
-    printf("\n Enter the value of n");
-    scanf("%d",&n);
-    while(i<=n)
+    int n1,n2,max;
+    printf("\n Enter two numbers");
+    scanf("%d%d",&n1,&n2);
+    max=n1>n2?n1:n2;
+
+    while(1)
+{
+
+    if(max%n1==0 && max%n2==0)
     {
-        printf("\n%d",i*i*i);
-        i++;
+    printf("\n LCM of %d and %d is %d",n1,n2,max);
+    break;
+    }
+    max++;
+
     }
     return 0;
 }

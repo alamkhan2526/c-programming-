@@ -1,15 +1,18 @@
-// Write a program to print the first N odd natural numbers
+// Write a program to calculate sum of squares of first N natural numbers
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int n,i=1;
+    int n,i=1,sum=0;
     printf("\n Enter the value of n");
     scanf("%d",&n);
-    while(i<=2*n-1)
+    while(i<=n)
     {
-        printf("\n%d",i);
-        i=i+2;
+        sum=sum+i*i;
+        i++;
     }
+
+    printf("\n %d is the square of first %d natural number ",sum,n);
     return 0;
+
 }

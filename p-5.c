@@ -1,16 +1,18 @@
-// Write a program to print the first N odd natural numbers in reverse order.
+// Write a program to calculate sum of cubes of first N natural numbers
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int n,i;
+    int n,i=1,sum=0;
     printf("\n Enter the value of n");
     scanf("%d",&n);
-    i=n*2-1;
-    while(i>=1)
+    while(i<=n)
     {
-        printf("\n%d",i);
-        i=i-2;
+        sum=sum+i*i*i;
+        i++;
     }
+
+    printf("\n %d is the cube of first %d natural number ",sum,n);
     return 0;
+
 }

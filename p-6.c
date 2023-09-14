@@ -1,15 +1,18 @@
-// Write a program to print the first N even natural numbers
+// Write a program to calculate factorial of a number
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int i=2,n;
+    int num,fac=1;
     printf("\n Enter the value of n");
-    scanf("%d",&n);
-    while(i<=2*n)
+    scanf("%d",&num);
+    int n=num;
+
+    while(n)
     {
-        printf("\n%d",i);
-        i+=2;
+        fac=fac*n;
+        n=n-1;
     }
+    printf("\n Factorial of %d is %d",num,fac);
     return 0;
 }
