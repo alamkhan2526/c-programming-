@@ -1,15 +1,29 @@
-/*WAP to take date as an input in below given format and convert the date format and
-display the result as given below.
-User Input date format – “DD/MM/YYYY” (27/11/2022)
-Output format –
-“Day – DD , Month – MM , Year – YYYY” (Day – 27 ,Month – 07 , Year – 2022)*/
+/*Write a program which takes the cost price and selling price of a product from the
+user. Now calculate and print profit or loss percentage.*/
+
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int date,month,year;
-    printf("\n Enter    DD/MM/YYY");
-    scanf("%d%d%d",&date,&month,&year);
-    printf("\nDay - %d ,Month - %d ,year - %d",date,month,year);
+    float cost,selling,p,l;
+    float pp,lp;
+    printf("\n Enter the cost and selling price of procuct");
+    scanf("%f%f",&cost,&selling);
+    if(cost>selling)
+    {
+        l=cost-selling;
+       
+        lp=(l/cost)*100;
+        printf("\n %f is the loss percentage",lp);
+        
+    }
+    else
+    {
+        p=selling-cost;
+       
+        pp=(p/cost)*100;
+        printf("\n %f is the profit percentage",pp);
+       
+    }
     return 0;
 }

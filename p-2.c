@@ -1,8 +1,15 @@
-//write a program to print Hello in first line and students in second line
+/*Write a program to check whether a given number is divisible by 5 or not*/
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    printf("\n Hello \n Students");
+    int num;
+    printf("\nEnter a number",&num);
+    scanf("%d",&num);
+
+    if(num%5==0)
+    printf("\n %d is divisible by 5",num);
+    else 
+    printf("\n %d is not divisible by 5",num);
     return 0;
 }

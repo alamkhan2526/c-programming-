@@ -1,16 +1,15 @@
-/*WAP to find the area of the circle. Take radius of circle from user as input and print the
-result in below given format.
-Expected output format – “Area of circle is A having the radius R”. Replace A with area
-& R with radius.*/
+/*Write a program to check whether a given number is an even number or an odd
+number without using % operator.*/
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    int r;
-    float A;
-    printf("\n Enter the radius of cirle");
-    scanf("%d",&r);
-    A=22.7*r*r;
-    printf("\n  \" Area of circle is %f having radius %d",A,r);
+    int num;
+    printf("\n Enter a number");
+    scanf("%d",&num);
+    if(num & 1 ==1)
+    printf("\n %d is an odd number",num);
+    else
+    printf("\n %d is an even number",num);
     return 0;
 }

@@ -1,10 +1,17 @@
-//Find output of below code:
+//Write a program to check whether a given alphabet is in uppercase or lowercase.
+
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-int x = printf("ineuron");
-printf("%d\n",x);
-return 0;
+    char a;
+    printf("\n Ener an alphabet");
+    scanf("%c",&a);
+
+    if(a>='A' && a<='Z')
+    printf("\n %c alphabet is uppercase",a);
+
+    if(a>='a' && a<='z')
+    printf("\n %c alphabet is lowercase",a);
+    return 0;
 }
-// the output of the program is ineuron7
