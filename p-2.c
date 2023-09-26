@@ -1,17 +1,21 @@
-// Write a program to calculate sum of first N even natural numbers
+// Write a recursive function to print first N natural numbers in reverse order
 #include<stdio.h>
 #include<conio.h>
+void natural(int n);
 int main()
 {
-    int i=2,n,sum=0;
-    printf("\n enter the value of n");
+    int n;
+    printf("\nEnter the value of n");
     scanf("%d",&n);
-    int k=n*2;
-    while(i<=k)
-    {   
-        sum=sum+i;
-        i+=2;
+    natural(n);
+    return;
+}void natural(int n)
+{
+    if(n<1)
+    return;
+    else
+    {
+        printf("%d ",n);
+        natural(n-1);
     }
-        printf("\n sum of %d even natural number is%d",n,sum);
-    return 0;
 }

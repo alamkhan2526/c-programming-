@@ -1,16 +1,20 @@
-// Write a program to calculate sum of first N natural numbers
+// Write a recursive function to print first N natural numbers
 #include<stdio.h>
 #include<conio.h>
+void natural(int n);
 int main()
 {
-    int n,sum=0,i=1;
+    int n;
     printf("\n Enter the value of n");
     scanf("%d",&n);
-    while(i<=n)
-    {
-        sum=sum+i;
-        i++;
-    }
-    printf("\n sum of %d natural numbers is %d",n,sum);
+    natural(n);
     return 0;
+}void natural(int n)
+{
+    if(n<=0)
+    return;
+    {
+    natural(n-1);
+    printf("%d ",n);
+    }
 }

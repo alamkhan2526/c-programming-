@@ -1,23 +1,21 @@
-// Write a program to calculate LCM of two numbers
+// Write a recursive function to print octal of a given decimal number
 #include<stdio.h>
 #include<conio.h>
+void binary(int n);
 int main()
 {
-    int n1,n2,max;
-    printf("\n Enter two numbers");
-    scanf("%d%d",&n1,&n2);
-    max=n1>n2?n1:n2;
-
-    while(1)
-{
-
-    if(max%n1==0 && max%n2==0)
-    {
-    printf("\n LCM of %d and %d is %d",n1,n2,max);
-    break;
-    }
-    max++;
-
-    }
+    int n;
+    printf("\n Enter a decimal number ");
+    scanf("%d",&n);
+    binary(n);
     return 0;
+}void binary(int n)
+{
+    if(n==0)
+    return;
+    else
+    {
+        binary(n/8);
+        printf("%d",n%8);
+    }
 }

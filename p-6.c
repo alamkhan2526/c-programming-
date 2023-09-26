@@ -1,18 +1,21 @@
-// Write a program to calculate factorial of a number
+// Write a recursive function to print first N even natural numbers in reverse order
 #include<stdio.h>
 #include<conio.h>
+void reverseeven(int n);
 int main()
 {
-    int num,fac=1;
+    int n;
     printf("\n Enter the value of n");
-    scanf("%d",&num);
-    int n=num;
-
-    while(n)
-    {
-        fac=fac*n;
-        n=n-1;
-    }
-    printf("\n Factorial of %d is %d",num,fac);
+    scanf("%d",&n);
+    reverseeven(n*2);
     return 0;
+}void reverseeven(int n)
+{
+    if(n<2)
+    return;
+    else
+    {
+        printf("%d ",n);
+        reverseeven(n-2);
+    }
 }

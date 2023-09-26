@@ -1,18 +1,20 @@
-// Write a program to calculate sum of squares of first N natural numbers
+// Write a recursive function to print first N odd natural numbers in reverse order
 #include<stdio.h>
 #include<conio.h>
+void oddreverse(int n);
 int main()
 {
-    int n,i=1,sum=0;
+    int n;
     printf("\n Enter the value of n");
     scanf("%d",&n);
-    while(i<=n)
-    {
-        sum=sum+i*i;
-        i++;
-    }
-
-    printf("\n %d is the square of first %d natural number ",sum,n);
+    oddreverse(n*2-1);
     return 0;
-
+}void oddreverse(int n)
+{
+    if(n<1)
+    return;
+    else{
+        printf("%d ",n);
+        oddreverse(n-2);
+    }
 }

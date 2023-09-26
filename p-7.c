@@ -1,18 +1,21 @@
-// Write a program to count digits in a given number
+// Write a recursive function to print squares of first N natural numbers
 #include<stdio.h>
 #include<conio.h>
+void squares(int n);
 int main()
 {
-    int num,count=0;
-    printf("\n Enter the number");
-    scanf("%d",&num);
-    int num1=num;
-    while(num1)
-    {
-        count++;
-        num1=num1/10;
-    }
-    printf("\n there are %d digits in %d",count,num);
+    int n;
+    printf("\n Enter the value of n");
+    scanf("%d",&n);
+    squares(n);
     return 0;
-
+}void squares(int n)
+{
+    if(n<1)
+    return;
+    else
+    {
+        squares(n-1);
+        printf("%d ",n*n);
+    }
 }

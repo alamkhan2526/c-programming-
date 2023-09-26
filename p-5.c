@@ -1,18 +1,22 @@
-// Write a program to calculate sum of cubes of first N natural numbers
+// Write a recursive function to print first N even natural numbers
 #include<stdio.h>
 #include<conio.h>
+void even(int n);
 int main()
 {
-    int n,i=1,sum=0;
+    int n;
     printf("\n Enter the value of n");
     scanf("%d",&n);
-    while(i<=n)
-    {
-        sum=sum+i*i*i;
-        i++;
-    }
-
-    printf("\n %d is the cube of first %d natural number ",sum,n);
+    even(n*2);
     return 0;
+}void even(int n)
+{
+    if(n<2)
+    return;
+    else
+    {
+        even(n-2);
+        printf("%d ",n);
 
+    }
 }
