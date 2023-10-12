@@ -1,21 +1,26 @@
-// Write a recursive function to print binary of a given decimal number
+/*Write a program to find the second smallest number in an array.Take array values
+from the user.*/
 #include<stdio.h>
 #include<conio.h>
-void binary(int n);
 int main()
 {
-    int n;
-    printf("\n Enter a decimal number ");
-    scanf("%d",&n);
-    binary(n);
-    return 0;
-}void binary(int n)
-{
-    if(n==0)
-    return;
-    else
+    int arr[10],i,sl,count=0;
+    printf("\n Enter 10 numbers");
+    for(i=0; i<=9; i++)
+    scanf("%d",&arr[i]);
+    sl=arr[0];
+    for(i=1; i<=9; i++)
     {
-        binary(n/2);
-        printf("%d",n%2);
+    if(sl>arr[i])
+    {
+        sl=arr[i];
+        count++;
     }
+    if(count==2)
+    {
+    printf("second smallest numbers is %d",sl);
+    break;
+    }
+    }
+    return 0;
 }

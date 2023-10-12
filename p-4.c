@@ -1,20 +1,17 @@
-// Write a recursive function to print first N odd natural numbers in reverse order
+/*Write a program to find the greatest number stored in an array of size 10. Take array
+values from the user.*/
 #include<stdio.h>
 #include<conio.h>
-void oddreverse(int n);
 int main()
 {
-    int n;
-    printf("\n Enter the value of n");
-    scanf("%d",&n);
-    oddreverse(n*2-1);
+    int arr[10],i,max;
+    printf("\n Enter 10 numbers");
+    for(i=0; i<=9; i++)
+    scanf("%d",&arr[i]);
+    max=arr[0];
+    for(i=0; i<=9; i++)
+    if(max<arr[i])
+    max=arr[i];
+    printf("\n Greatest number in array is %d",max);
     return 0;
-}void oddreverse(int n)
-{
-    if(n<1)
-    return;
-    else{
-        printf("%d ",n);
-        oddreverse(n-2);
-    }
 }
