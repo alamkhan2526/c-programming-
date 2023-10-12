@@ -1,21 +1,26 @@
-// Write a recursive function to print first N even natural numbers in reverse order
+/*Write a program to sort elements of an array of size 10. Take array values from the
+user.*/
 #include<stdio.h>
 #include<conio.h>
-void reverseeven(int n);
 int main()
 {
-    int n;
-    printf("\n Enter the value of n");
-    scanf("%d",&n);
-    reverseeven(n*2);
-    return 0;
-}void reverseeven(int n)
-{
-    if(n<2)
-    return;
-    else
+    int arr[10],i,temp,j;
+    printf("\n Enter 10 numbers");
+    for(i=0; i<=9; i++)
+    scanf("%d",&arr[i]);
+    for(i=0; i<=9; i++)
     {
-        printf("%d ",n);
-        reverseeven(n-2);
+    for(j=i+1; j<=9; j++)
+    {
+    if(arr[i]>arr[j])
+    {
+    temp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=temp;
     }
+    }
+}
+    for(i=0; i<=9; i++)
+    printf("%d ",arr[i]);
+    return 0;
 }
